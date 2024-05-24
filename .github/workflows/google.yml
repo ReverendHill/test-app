@@ -46,7 +46,7 @@ jobs:
       with:
         token_format: 'access_token'
         workload_identity_provider: 'projects/814047813650/locations/global/workloadIdentityPools/githubactions/providers/github'
-        service_account: 'github-access@valiant-nucleus-423805-p4.iam.gserviceaccount.com'
+        service_account: 'github-actions2@valiant-nucleus-423805-p4.iam.gserviceaccount.com'
 
     # Alternative option - authentication via credentials json
     # - id: 'auth'
