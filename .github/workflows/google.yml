@@ -21,7 +21,7 @@ env:
   GAR_LOCATION: us-west2 # TODO: update region of the Artifact Registry
   GKE_CLUSTER: workbench-cluster-1    # TODO: update to cluster name
   GKE_ZONE: us-west1   # TODO: update to cluster zone
-  DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
+  DEPLOYMENT_NAME: myapp-deployment # TODO: update to deployment name
   REPOSITORY: workbench-images # TODO: update to Artifact Registry docker repository
   IMAGE: static-site
 
