@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+  namespace: workbench
+  labels: 
+    app: myapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: reverendhill/work-bench:imagepush4
+        env:
+        - name: "PORT"
+          value: "50000"
+      imagePullSecrets:
+      - name: regcred
+      
