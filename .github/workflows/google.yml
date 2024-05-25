@@ -86,7 +86,7 @@ jobs:
       run: |-
         # replacing the image name in the k8s template
         cd kubernetes/kustomize
-        kustomize edit set image reverendhill/work-bench:imagepush4=LOCATION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG=$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA
+        kustomize edit set image reverendhill/work-bench:imagepush4="$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA"
         cat kustomization.yaml
         cat application/myapp-deployment.yaml
         kubectl rollout status deployment/$DEPLOYMENT_NAME -n workbench
