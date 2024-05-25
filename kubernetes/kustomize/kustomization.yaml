@@ -1,4 +1,4 @@
 resources:
   - application/myapp-deployment.yaml
   - application/myapp-service.yaml
-  - application/workbench-ingress.yaml
+  - application/workbench-ingress2.yaml
