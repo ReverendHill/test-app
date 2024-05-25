@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: reverendhill/work-bench:imagepush4
+        image: reverendhill/work-bench
         env:
         - name: "PORT"
           value: "50000"
